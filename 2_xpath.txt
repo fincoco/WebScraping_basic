@@ -1,0 +1,16 @@
+#xpath는 html에 들어있는 특정 element를 지칭하는 주소(=경로)
+#전체 주소를 쓰거나 id나 클래스 같은 특정 속성을 이용하여 간단하게 나타낼 수도 있음.
+
+/학교/학년/반/학생[2]
+//*[@학번="1-1-5"]      #element값을 줄일 수 있음.
+
+/html/body/div/div/div/div/span/a...
+//*[@id="login"]        #//두번 들어가면 모든 하위 노드에 대해 전부 찾아보기
+
+
+#네이버 로그인 버튼의 Xpath를 따오면 아래와 같음. 
+#id라는 특정한 속성을 통해 줄이기 쉬움.
+//*[@id="account"]/a
+
+#전체 full path는 아래와 같음
+/html/body/div[2]/div[3]/div[3]/div/div[2]/a
